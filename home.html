@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philz-Farm</title>
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b5534c6292.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="W3 SCH/W3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div style="margin-top: 0%;margin-bottom: 0%;">
+
+     <!-- BIG NAV  -->
+        <nav style="background-color:olive;position: fixed;top: 0px;z-index: 5; "id="navbar">
+            <div class="nav-wrapper container" style="margin-top: 0%;margin-bottom: 0%;">
+
+                <a href="" class="left brand-logo hide-on-med-and-down"> 
+                    <img src="img/TRANS AGROPHILZ.png" alt="" style="width: 75px;position: relative;"  >
+                </a>
+                <a href="" class="center brand-logo hide-on-large-only right"> 
+                    <img src="img/TRANS AGROPHILZ.png" alt="" style="width: 75px; position: relative;" >
+                </a>
+
+                
+                <a href="" class="sidenav-trigger" data-target="menu"><i class="fa-solid fa-bars" style="color: #000000;"></i></a>
+                <ul class="right hide-on-med-and-down" style="color: olive;">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><div class="w3-dropdown-hover white-text"  style="background: none;">
+                        <button class="w3-button" id="button1" style="position: relative;bottom: 15px; margin-left: 5px; margin-right: 5px; padding-top: 15px;">Products 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4" style="color: black; width: 400px;">
+                            <a href="#" class="w3-bar-item w3-button">Livestock(cattle, poultry, hogs, etc.)</a>
+                            <a href="#" class="w3-bar-item w3-button">Crops (corn, soybeans, hay, etc.)</a>
+                            <a href="#" class="w3-bar-item w3-button">Edible forestry products (almonds, walnuts, etc.)</a>
+                            <a href="#" class="w3-bar-item w3-button">Dairy (milk products)</a>
+                            <a href="#" class="w3-bar-item w3-button">Fish farming</a>
+                            <a href="#" class="w3-bar-item w3-button">Miscellaneous ag products (i.e., honey)</a>
+                        </div>  
+                        </div>
+                    </li>
+                    <li><a href="">Farmers</a></li>
+                    <li><div class="w3-dropdown-hover white-text"  style="background: none;">
+                        <button class="w3-button" id="button1" style="position: relative;bottom: 15px; margin-left: 5px; margin-right: 5px; padding-top: 15px;">Contact Us 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4" style="color: black; width: 300px;">
+                            <a href="#" class="w3-bar-item w3-button">Email: agrophilz2007@gmail.com</a>
+                            <a href="#" class="w3-bar-item w3-button">Mobile: +234 705 540 5289</a>
+                    </div>  
+                        </div>
+                    </li>
+                    <li><a href="#login" class="btn modal-trigger" style="background-color: white; border-radius: 25px;color: olive;">SignIn</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+     <!-- <SIDE NAV> -->
+
+        <ul class="sidenav" id="menu">
+            <li><a href="" style="color: olivedrab;">Home</a></li>
+            <li><a href="" style="color: olivedrab;">About Us</a></li>
+            <li><div class="w3-dropdown-hover white-text"  style="background: none;">
+                <button class="w3-button" id="button1" style="color: olivedrab;margin-left: 15px;">Products 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4" style="background-color: olivedrab; width: 295px;color: white;">
+                    <a href="#" class="w3-bar-item w3-button">Livestock(cattle, poultry, hogs, etc.)</a>
+                    <a href="#" class="w3-bar-item w3-button">Crops (corn, soybeans, hay, etc.)</a>
+                    <a href="#" class="w3-bar-item w3-button">Edible forestry products (almonds, walnuts, etc.)</a>
+                    <a href="#" class="w3-bar-item w3-button">Dairy (milk products)</a>
+                    <a href="#" class="w3-bar-item w3-button">Fish farming</a>
+                    <a href="#" class="w3-bar-item w3-button">Miscellaneous ag products (i.e., honey)</a>
+                </div>  
+                </div>
+            </li>
+            <li><a href="" style="color: olivedrab;">Farmers</a></li>
+            <li><div class="w3-dropdown-hover white-text"  style="background: none;">
+                <button class="w3-button" id="button1" style="color: olivedrab; margin-left: 15px;">Contact Us 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4" style="color: white; width: 295px;background-color: olivedrab;">
+                    <a href="#" class="w3-bar-item w3-button" style="width: 290;">Email: agrophilz2007@gmail.com</a>
+                    <a href="#" class="w3-bar-item w3-button">Mobile: +234 705 540 5289</a>
+            </div>  
+                </div>
+            </li>
+            <li><a href="#login" class="btn modal-trigger" style="background-color:olivedrab;border-radius: 25px;"> SignIn </a></li>
+        </ul>
+
+        <div style="margin-bottom: 0%;" class="" style="width: 100%;">
+            <!-- <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="img/dairy-farm-1 cover.jpg" alt="" style="width: 100%;">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="img/dairy-cowsAgVic 3.jpg" alt="" style="width: 100%;">
+                          </li>
+                      </ul>
+                </div>
+              </section> -->
+              <img src="img/AGRO PHILZ OG COVER.jpg" alt="" style="width: 100%;">
+        </div>
+    </div>
+
+    <div class="modal" id="login" style="margin-top: 0%;">
+        <div class="header center">
+            <h1 style="background-color: olive; color: white;">AgroPhilz</h1>
+            <img src="" alt="">
+        </div>
+        <div class="modal-body container center">
+        
+            <input type="text" placeholder="Email,Username,Number">
+            <input type="password" placeholder="Password">
+            <a href="" style="color: red;"> Forget Password? </a>
+        
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="btn" style="background-color: olive;">Login</a>
+        </div>
+
+    </div>
+            
+
+    <div style="background-color: rgb(214, 214, 214); margin-top: 0%;margin-bottom: 0%;">
+        <div class="container" style="padding-top: 50px;">
+            <div class="row">
+                <div class="col l6 s12 m12 center" style="padding-bottom: 50px;">
+                    <h1 style="font-size: 45px; font-weight: 700;padding-top: 60px; color:black;">Agro Philz</h1>
+                    <p style="font-size: 25px; color:rgb(90, 90, 90)">We work with all actors in the agricultural value chain and provide good value quality/price and high security for the buyer.
+                        Farmers, buyers, sellers, transporters, partners, investors and all actors in the agricultural world interact easily and simply on the platform.</p>
+
+                    <a href="#Register" class="btn white-text modal-trigger" style="border-radius: 20px;font-weight: 500; background-color:#6EC24E;">Register Now</a>
+                </div>
+                <div class="col l6 s12 m12 center" style="padding-bottom: 50px;">
+                    <a href="">
+                        <img src="img/agro philz logo.jpg" alt=""  style="width: 100%;" data-aos="fade-down"> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="modal" id="Register" >
+        <div class="header center">
+            <h1 style="background-color: olive; color: white;">AgroPhilz</h1>
+            <img src="" alt="">
+        </div>
+        <div class="modal-body container center">
+            <form class="container">
+                <label for="name" class="left">First Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name" class="left">Last Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="name" class="left">Farm Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="date" class="left">Date:</label>
+                <input type="date" id="name" name="name" required><br>
+              
+                <label for="email" class="left">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+              
+                <label for="phone" class="left">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 234-456-7890" required><br><br>
+              
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+              </form>
+        </div>
+        <div class="modal-footer center">
+            <a href="#!" class="btn" style="background-color: olive;">Submit</a>
+        </div>
+    </div>
+
+
+    <div class="center " style="margin-bottom: 50px;">
+        <h1 style="font-weight: 700; padding-top: 50px;"> Our Products </h1>
+        <div class="container">
+          <div class="row">
+            <div class="col l12 m12 s12">
+              <select name="products" id="products" style="display: inline-table;width:200px;">
+                <option value="0">Select Product  Here:</option>
+                <option value="1">Livestock</option>
+                <option value="2">Crops</option>
+                <option value="3">Edible forestry products</option>
+                <option value="4">Dairy</option>
+                <option value="5">Fish farming</option>
+                <option value="6">Miscellaneous ag products </option>
+              </select><br><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l12 m12 s12">
+                <form class="center" action="" style="width: 80%;">
+                    <input type="text" placeholder="Search.." name="search" style="box-sizing: border-box;  border: 1px solid olivedrab;border-radius: 10px;" >
+                </form> 
+            </div>
+          </div>            
+          <div class="col l4 m4 s4">
+                <form class="center" action="" style="width: 80%;">
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form> 
+            </div>
+        </div>
+     
+        
+        <div class="row">
+            <div class="col l3 ">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/dairy farm1.jpg" alt="" style="width: 100%;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    Cow
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>Steflon
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  steflon@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 098 476 9089
+                    </a>
+                </div>
+            </div>
+            <div class="col l3 ">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/goat1.jpg" alt="" style="width: 83%;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    Goat
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>jakson
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  jackson@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 890 340 5223
+                    </a>
+                </div>
+            </div>
+            <div class="col l3">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/cow.jpg" alt="" style="width: 100%; padding-bottom: 40px;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    Cow
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>Austine
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  austine@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 705 540 5289
+                    </a>
+                </div>
+            </div>
+            <div class="col l3">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/Edibles forest.png" alt="" style="width: 85%;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    Edibles forest
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>Esther
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  esther022@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 987 672 9809
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l3">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/tolotolo.jpg" alt="" style="width: 100%;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    Duck
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>Abiodun
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  abiodun@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 909 000 8796
+                    </a>
+                </div>
+            </div>
+            <div class="col l3">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/pig cover.jpg" alt="" style="width: 100%;padding-bottom: 50px;padding-top: 10px;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    Pig
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>Mary
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  mary099@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 605 897 5649
+                    </a>
+                </div>
+            </div>
+            <div class="col l3">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/dairy farm1.jpg" alt="" style="width: 100%;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    dushsxjasj
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">
+                    <b>Farmer: </b>Benson
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  benson@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 905 990 6758
+                    </a>
+                </div>
+            </div>
+            <div class="col l3">
+                <div class="card container left-align"  style="padding-left: 15px;padding-right: 15px;padding-bottom: 10px;padding-top: 20px;background-color: #ffffff;">
+                    <img src="img/dairy farm1.jpg" alt="" style="width: 100%;">
+                    <br><hr style="border-color: olivedrab;">
+                    <b>Product Name:</b>
+                    dushsxjasj
+                    <br>
+                    <b>Discription: </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae et id nulla laborum sint.
+                    <br>
+                    <b>Catigory: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, aut.
+                    <hr style="border-color: olivedrab;">                    
+                    <b>Farmer: </b>Sammie
+                    <br>
+                    <a href="">
+                        <i class="fa-solid fa-envelope" style="color: olivedrab;"></i>  sammie@gmail.com
+                    </a>
+                    <br>
+                    <a href="">
+                        <i class="fa-sharp fa-solid fa-phone" style="color:olivedrab;"></i>  +234 803 768 7869
+                    </a>
+                </div>
+            </div>
+
+        </div>
+            <hr style="border-color: olivedrab;">
+            <br>
+            <br>
+            <br>
+        <div class="container center" style="padding-top: 30px; background-color: olivedrab;" col="m13 s12">
+            <h1 style="color: white;"> Sign up to our newsletter</h1>
+            <p style="color: rgb(189, 189, 189);" class="container">Subscribe to our newsletter to get updates on our latest products!</p>
+            <form action="" class="container center" style="padding-bottom: 30px;">
+                    <input type="email" placeholder="Enter Your Email">
+                    <br>
+                    <a href="" class="btn" style="background-color:white; color: #647500; border-radius: 20px;"> Subscribe</a>
+            </form>
+        </div>
+    </div>
+
+    
+    <footer class="" style="background-color: olive;">
+        <div class="container" style="padding-top: 30px; padding-bottom: 10px;">
+            <div class="row">
+                <div class="col l4 m12 s12">
+                    <img src="img/TRANS AGROPHILZ.png" alt="" style="width: 40%;" class="">
+                    <br>
+                    <b style="color: white; font-size: larger;">support@Agrophilz.net</b>
+                    <br>
+                </div>
+                <div class="col l4 m6 s12" style="padding-top: 10px;">
+                    <b style="color: white;">ABOUT US</b>
+                    <p style="color: white;">
+                        AgroPhilz Market is a digital platform specialized in the promotion and marketing of agricultural products, connecting farms to markets and promoting local products internationally. Web, mobile and SMS platform (USSD) connecting local farmers and producers to potential buyers and end consumers on a digital market and allowing crowdfunding of projects in the agricultural and agri-food sector.
+                    </p>
+                </div>
+                <div class="col l4 m6 s12" style="color: white;padding-top: 10px;">
+                    <b style="color: white;">CONTACTS</b><br>
+                        <a href=""><br>
+                            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>  2007, Av. Ajayi's de Goffai, lokoja, Kogi State.
+                        </a>
+                        <br>
+                        <a href="">
+                            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>  agrophilz2007@gmail.com
+                        </a>
+                        <br>
+                        <a href="">
+                            <i class="fa-sharp fa-solid fa-phone" style="color: #ffffff;"></i>  +234 705 540 5289
+                        </a>
+                        <br><br>
+                            <a href="" class="btn" style="border-radius: 100%;width: 30px; height: 30px;background-color: #ffffff;"><i class="fa-brands fa-telegram" style="color: #b0b329; position: relative; right: 10px;bottom: 3px;"></i></a>
+                            <a href="" class="btn" style="border-radius: 100%;width: 30px; height: 30px;background-color: #ffffff;"><i class="fa-brands fa-twitter" style="color: #b0b329; position: relative; right: 10px;bottom: 3px;"></i></a>
+                            <a href="" class="btn" style="border-radius: 100%;width: 30px; height: 30px;background-color: #ffffff;"><i class="fa-brands fa-telegram" style="color: #b0b329; position: relative; right: 10px;bottom: 3px;"></i></a>
+
+                        <br><br>
+                        <b  style="color: white;"> Useful Links</b>
+                        <br>
+                        <a href="">
+                            <i class="fa-sharp fa-solid fa-pen-to-square" style="color: #f6f7f9;"></i> Sign Up
+                        </a>
+                        <br>
+                        <a href="#login">
+                            <i class="fa-solid fa-right-to-bracket" style="color: #e8ecf2;"></i> Sign In
+                        </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="black" style="margin-bottom: 0%; padding-bottom: 20px;padding-top: 20px;">
+            <div class="center" style="margin-bottom: 0%;">
+                <div class="col l4 s4 m4">
+                    <b style="color: #ffffff;margin-bottom: 0%;"> ©  2024 All Right Reserved</b>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        new Splide( '#image-carousel' ).mount();
+      </script>
+
+
+    <script>
+        $(document).ready(function(){
+        $('.collapsible').collapsible();
+        $('.slider').slider();
+        $('.sidenav').sidenav();
+        $('.modal').modal();
+        $('.carousel').carousel();
+        $('.dropdown-trigger').dropdown();
+        $('.materialboxed').materialbox();
+        });
+
+        var splide = new Splide( '.splide', {
+    type  : 'fade',
+    rewind: true,
+    autoplay: 'true',
+    Interval:'100',
+  } );
+  
+  splide.mount();
+
+    </script>
+
+      <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+          new Splide( '#image-carousel' ).mount();
+        } );
+      </script>
+
+<script>
+    window.addEventListener('scroll', function() {
+var navbar = document.getElementById('navbar');
+if (window.scrollY < 300) { // Change 20 to the desired scroll position where you want the color change to occur
+  navbar.style.backgroundColor = 'transparent'; // Change this to the color you want when scrolling
+
+} else {
+  navbar.style.backgroundColor = 'olive'; // Change this to the initial color of the navbar
+
+} 
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+  <!-- <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="img/greenfarm.jpg">
+          <span class="card-title"> </span>
+        </div>
+        <div class="card-content">
+          <p>AgroPhilz-Change The Business...</p>
+        </div>
+      </div>
+    </div>
+  </div> --> 
